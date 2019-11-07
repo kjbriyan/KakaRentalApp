@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.kakarental.store">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".Service.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_notification"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_notification"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Acitivity.NotifikasiActivity"></activity>
+        <activity android:name=".Acitivity.PerpanjangActivity" />
+        <activity android:name=".Acitivity.UpdateKtpActivity" />
+        <activity android:name=".Acitivity.DaftarSewa_Activity" />
+        <activity android:name=".Acitivity.PilihAlamatActivity2" />
+        <activity android:name=".Acitivity.TambahAlamatActivity" />
+        <activity android:name=".Acitivity.SettingActivity" />
+        <activity android:name=".Acitivity.KeranjangActivity" />
+        <activity android:name=".Acitivity.UbahAlamatActivity" />
+        <activity android:name=".Acitivity.SuccesPesanActivity" />
+        <activity android:name=".Acitivity.PilihAlamatActivity" />
+        <activity android:name=".Acitivity.Kategori_ItemActivity" />
+        <activity android:name=".Acitivity.KategoriActivity" />
+
+        <service android:name=".Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/ic_icon2" />
+        </service>
+
+        <activity android:name=".Acitivity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Acitivity.HomeActivity" />
+        <activity android:name=".Acitivity.RegistrasiActivity" />
+        <activity android:name=".Acitivity.LoginActivity" />
+        <activity android:name=".Acitivity.DetailSewaActivity" />
+        <activity android:name=".Acitivity.DetailJualActivity" />
+        <activity android:name=".Acitivity.DetailIklanActivity" />
+        <activity android:name=".Acitivity.All_itemActivity" />
+        <activity android:name=".Acitivity.KonfirmasiActivity" />
+        <activity android:name=".Acitivity.BantuanActivity" />
+        <activity android:name=".Acitivity.SetingProfileActivity" />
+        <activity android:name=".Acitivity.DetailStatusActivity" />
+        <activity android:name=".Acitivity.BayarActivity" />
+        <activity android:name=".Acitivity.StatusPesananActivity" />
+        <activity android:name=".Acitivity.AcountActivity" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

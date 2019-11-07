@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clouds"
+    android:id="@+id/container">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_cartToolbarDetail"
+                    android:layout_width="25dp"
+                    android:layout_height="26dp"
+
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_shopping_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_notifications"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_cartToolbarDetail"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_badge_iconNotif_dasbord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bacground_icon_notification"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.222" />
+
+                <TextView
+                    android:id="@+id/tv_badgeIconCart_Dasboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bacground_icon_notification"
+                    android:gravity="center"
+                    android:text="99"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_badge_iconNotif_dasbord"
+                    app:layout_constraintEnd_toEndOf="@+id/img_cartToolbarDetail"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_badge_iconNotif_dasbord"
+                    app:layout_constraintTop_toTopOf="@+id/tv_badge_iconNotif_dasbord"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="2dp">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh_Dasboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScroll_dasboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+
+                            android:scaleType="fitXY"
+                            android:src="@drawable/banner_home" />
+
+                    </LinearLayout>
+
+
+
+                    //Layout Sewa
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="left"
+                            android:text="SEWA"
+                            android:textColor="@color/text_beli"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/allProdukSewa"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="right"
+                            android:text="Lihat Semua"
+                            android:textColor="@color/birulangit"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_dasboardSewa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           />
+
+                    </LinearLayout>
+
+                    //Layout Beli
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="left"
+                            android:text="BELI"
+                            android:textColor="@color/text_beli"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_AllProd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="right"
+                            android:text="Lihat Semua"
+                            android:textColor="@color/birulangit"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_dasboadrdBeli"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:itemCount="5"
+                            tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+
+                            tools:orientation="vertical"
+                            tools:scrollbars="horizontal"
+                            tools:spanCount="2" />
+
+                    </LinearLayout>
+
+                    //Layout Iklan
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="left"
+                            android:text="Produk Iklan"
+                            android:textColor="@color/text_beli"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/tv_lihatssemuaiklan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="40"
+                            android:fontFamily="@font/raleway_medium"
+                            android:gravity="right"
+                            android:text="Lihat Semua"
+                            android:textColor="@color/birulangit"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_dasboardIklan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progressDasboard"
+            style="@style/SpinKitView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:SpinKit_Color="@color/red" />
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

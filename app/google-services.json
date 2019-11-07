@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "813474616142",
+    "firebase_url": "https://notiffirebase-d9bba.firebaseio.com",
+    "project_id": "notiffirebase-d9bba",
+    "storage_bucket": "notiffirebase-d9bba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813474616142:android:9668c711310b3195",
+        "android_client_info": {
+          "package_name": "id.kakarental.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813474616142-eb8unrmt822ncmfhgpoa94h51t4udmv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.kakarental.store",
+            "certificate_hash": "56f597e5acb92f025ab8312adb759c4bc77d30eb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf03UjDZ38OGXBfVg2k1AFi2tl4fuONuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813474616142-chq74uevpm8vma8io2kbrj85jo7uobab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813474616142:android:992705f0a821fd0a",
+        "android_client_info": {
+          "package_name": "id.notifFirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813474616142-2suqjm8o58vp3engbtt738pp95frammh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.notifFirebase",
+            "certificate_hash": "56f597e5acb92f025ab8312adb759c4bc77d30eb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf03UjDZ38OGXBfVg2k1AFi2tl4fuONuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813474616142-chq74uevpm8vma8io2kbrj85jo7uobab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

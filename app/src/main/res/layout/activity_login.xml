@@ -1,0 +1,144 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clouds"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnm1234567890"
+                    android:hint="User Name"
+                    android:inputType="textFilter" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                >
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_lupaPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="5dp"
+                 />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_createAcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="5dp"
+                android:text="Create Acount" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/user_icon"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/icon"
+        android:text="Login "
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context=".Acitivity.LoginActivity"--><!--android:background="@color/clouds">-->
+
+    <!--<ImageView--><!--android:id="@+id/imageView2"--><!--android:layout_width="180dp"--><!--android:layout_height="180dp"--><!--android:layout_marginTop="56dp"--><!--android:src="@drawable/icon"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.497"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--tools:ignore="MissingConstraints" />-->
+
+
+    <!--<EditText--><!--android:id="@+id/et_username"--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="42dp"--><!--android:layout_marginEnd="8dp"--><!--android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnm1234567890"--><!--android:hint="Username"--><!--android:inputType="textFilter"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toBottomOf="@+id/imageView2"--><!--tools:ignore="MissingConstraints" />-->
+
+    <!--<android.support.design.widget.TextInputLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--tools:ignore="MissingConstraints"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--app:passwordToggleEnabled="true"--><!--app:layout_constraintEnd_toEndOf="@+id/et_username"--><!--app:layout_constraintStart_toStartOf="@+id/et_username"--><!--app:layout_constraintTop_toBottomOf="@+id/et_username"--><!--android:id="@+id/til">--><!--<EditText--><!--android:id="@+id/et_password"--><!--android:layout_width="match_parent"--><!--android:inputType="textPassword"--><!--android:layout_height="wrap_content"--><!--android:hint="Password"--><!--tools:ignore="MissingConstraints" />--><!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<Button--><!--android:id="@+id/btn_login"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:text="Login"--><!--android:textColor="@color/black"--><!--app:layout_constraintEnd_toEndOf="@+id/til"--><!--app:layout_constraintStart_toStartOf="@+id/til"--><!--app:layout_constraintTop_toBottomOf="@+id/til"--><!--tools:ignore="MissingConstraints" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_lupaPass"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="32dp"--><!--android:layout_marginEnd="8dp"--><!--android:text="Lupa Password ?"--><!--android:textSize="20sp"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toBottomOf="@+id/btn_login"--><!--tools:ignore="MissingConstraints" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_createAcount"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="8dp"--><!--android:text="Create Acount"--><!--android:textSize="20sp"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="@+id/tv_lupaPass"--><!--app:layout_constraintHorizontal_bias="0.75"--><!--app:layout_constraintStart_toStartOf="@+id/tv_lupaPass"--><!--app:layout_constraintTop_toBottomOf="@+id/tv_lupaPass"--><!--app:layout_constraintVertical_bias="0.148"--><!--tools:ignore="MissingConstraints" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->

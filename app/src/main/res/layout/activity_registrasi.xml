@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/clouds"
+    tools:context=".Acitivity.RegistrasiActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/barAtas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barAtas"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Username"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_regUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnm1234567890"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="input username"
+                android:inputType="textFilter"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Password"
+                android:textSize="17sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/et_regPasswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:hint="input password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Nama Lengkap"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_regFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="Nama sesuai ktp"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/raleway_medium"-->
+            <!--android:text="Tanggal Lahir"-->
+            <!--android:textSize="17sp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_regTglLahir"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/raleway_medium"-->
+            <!--android:hint="1992-01-12"-->
+            <!--android:inputType="date"-->
+            <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/raleway_medium"-->
+            <!--android:text="Tempat Lahir "-->
+            <!--android:textSize="17sp" />-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_regTmptLahir"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/raleway_medium"-->
+            <!--android:hint="Banyuwangi"-->
+            <!--android:inputType="text"-->
+            <!--android:textSize="15sp" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Nomor NIK"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_idkk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="00359381010xxxxx"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Email"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="user@user.com"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Nomor Hp"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/et_regNohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:hint="08xxxxxxxxx"
+                android:inputType="phone"
+                android:textSize="15sp" />
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/raleway_medium"-->
+                <!--android:text="Alamat"-->
+                <!--android:textSize="17sp" />-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_kategorialamat"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:entries="@array/arraykategori"/>-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_provinsi"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginBottom="10dp"></Spinner>-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/sp_kota"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="30dp">-->
+
+            <!--</Spinner>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_regAlamat"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/raleway_medium"-->
+                <!--android:hint="Nama jalan,RT/RW,Desa,Kecamatan,\nKabupaten,Provinsi,Kode pos"-->
+                <!--android:inputType="textMultiLine"-->
+                <!--android:minLines="4"-->
+                <!--android:textSize="15sp" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Ambil Gambar ktp"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/iv_ktp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:background="@drawable/symbol"/>
+
+
+            <Button
+                android:id="@+id/btn_registrasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="24dp"
+                android:background="#d67601"
+                android:text="Registrasi"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_register"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="84dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.391" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

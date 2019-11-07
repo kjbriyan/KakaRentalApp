@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acitivity.SettingActivity"
+    android:background="@color/clouds">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back_black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/raleway_medium"
+                    android:gravity="center"
+                    android:text="Pengaturan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barAtas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_stdatadiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/white_grey_border_bottom"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="20dp"
+                android:text="Data Diri"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv_stalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/white_grey_border_bottom"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="20dp"
+                android:text="Daftar Alamat"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv_stpasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/white_grey_border_bottom"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="20dp"
+                android:text="Kata Sandi"
+                android:textSize="17sp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_stktp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="15dp"-->
+            <!--android:layout_marginEnd="25dp"-->
+            <!--android:background="@drawable/white_grey_border_bottom"-->
+            <!--android:fontFamily="@font/raleway_medium"-->
+            <!--android:padding="20dp"-->
+            <!--android:text="Foto KTP"-->
+            <!--android:textSize="17sp" />-->
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:background="@color/orange"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@+id/btn_logout"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#77c927</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="text_beli">#322e47</color>
+    <color name="birulangit">#308fe9</color>
+    <color name="white">#fff</color>
+    <color name="red">#e53935</color>
+    <color name="green">#5cb85c</color>
+    <color name="black">#000</color>
+    <color name="orange">#d67601</color>
+    <color name="greey">#BDBDBD</color>
+    <color name="fuel_town">#576574</color>
+
+    //ccc
+    <!--<color name="colorPrimary">#d91248</color>-->
+    <!--<color name="colorPrimaryDark">#d91248</color>-->
+    <!--<color name="colorAccent">#3ad23e</color>-->
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+
+</resources>
